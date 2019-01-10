@@ -1,0 +1,21 @@
+
+[
+    {
+        "id":1,
+        "nome": "Fabio Rodrigues Fonseca",
+        "email": "Ffonseca@gmail.com.br",
+        "salario": 1000
+    },
+    {
+        "id":2,
+        "nome": "Maria Rodrigues Fonseca",
+        "email": "Mfonseca@gmail.com.br",
+        "salario": 2000
+    },
+    {
+        "id":3,
+        "nome": "pedro Rodrigues Fonseca",
+        "email": "Pfonseca@gmail.com.br",
+        "salario": 3000
+    }
+]

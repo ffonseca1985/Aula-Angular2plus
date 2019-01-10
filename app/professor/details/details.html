@@ -1,0 +1,21 @@
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title">
+            {{titulo}}
+        </div>
+    </div>
+
+
+    <div class="panel-body" *ngIf="professor?.nome">
+       
+       <div class="text-primary cursor">
+          <label>Nome:</label><span>{{professor.nome}}</span>
+       </div>
+
+       <div class="text-primary">
+          <label>Email:</label><span>{{professor.email}}</span>
+       </div>
+    </div>
+</div>

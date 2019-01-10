@@ -1,0 +1,31 @@
+<div class="table-responsive" *ngIf="professores?.length > 0">
+    <table class="table table-bordered table-hover">
+        <caption>
+            {{titulo}}
+        </caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Salário</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let professor of professores" >
+            <tr>
+                <td>
+                    <a [routerLink]="['details', professor.id]">{{professor.id}}</a>
+                </td>
+                <td>
+                    <span>{{professor.nome  }}</span>
+                </td>
+                <td>
+                    <span>{{professor.email}}</span>
+                </td>
+                <td>
+                    <span>{{professor.salario}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

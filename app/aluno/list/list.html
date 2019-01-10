@@ -1,0 +1,15 @@
+
+
+<div class="jumbotron">
+    <div *ngFor="let aluno of alunos">
+        <a [innerText]="aluno.nome" 
+                (click)="getAlunoSelecionado(aluno.id)"></a>
+    </div>
+</div>
+
+<!-- Verificando se nome existe e não é nulo -->
+<div class="jumbotron" *ngIf="alunoSelecionado?.nome">
+    <aluno-details 
+    [aluno]="alunoSelecionado"
+    (filhoEvent)="callbackPai($event)"></aluno-details>
+</div>

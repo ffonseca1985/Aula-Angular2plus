@@ -1,0 +1,6 @@
+[
+    {"nome": "Home", "rota": "home"},
+    {"nome": "Aluno", "rota": "aluno"},
+    {"nome": "Professor", "rota": "professor"},
+    {"nome": "Usuario", "rota": "usuario"}
+]

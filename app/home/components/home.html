@@ -1,0 +1,43 @@
+
+<p> Interpolocao: {{descricao}}</p>
+<p>{{1+1}}</p>
+<p>{{'se tiver aspas então é string'}}</p>
+
+<hr>
+
+<!--eventos => () -->
+   <button type="button" class="btn btn-primary"
+           (click)="clickBtn()">
+           Evento click => ()
+   </button>
+
+   <p>
+           Teste Binding: {{testeDatabind.descricao}}
+   </p>
+
+   <p>
+           ONE WAY => <input type="text" [ngModel]="testeDatabind.descricao" />
+   </p>
+   <p>
+           TWO WAY => <input type="text" [(ngModel)]="testeDatabind.descricao" />
+   </p>
+
+   <p>
+           FAZENDO O TWO WAY DE OUTRA FORMA
+           <input type="text" (input)="inputValor($event.target.value)"  
+                              [value]="testeDatabind.descricao" >
+   </p>
+
+   <p>
+           EXPLORANDO VARIÁVEIS DE REFERÊNCIA DO FORMULARIO (#)
+           <input type="text" #variavelReferenciaTest />
+
+           <button (click)="setValorReferencia(variavelReferenciaTest.value)"
+                    class="btn btn-danger">
+                    Setando valor por referência!!
+            </button>   
+
+            {{variavelReferenciaTest}}
+
+   </p>
+
